@@ -29,8 +29,10 @@ jobs:
       - name: Build Docker image
         run: |
           docker build \
+            -f nginx/Dockerfile \
             -t adbonino/nginx-site:${{ github.sha }} \
-            -t adbonino/nginx-site:latest .
+            -t adbonino/nginx-site:latest \
+            nginx/
 
       # 5. Push a Docker Hub
       - name: Push Docker image
