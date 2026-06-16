@@ -19,7 +19,7 @@ spec:
         - containerPort: 80
         volumeMounts:
         - name: html-volume
-          mountPath: /usr/share/datos
+          mountPath: /workdir
       volumes:
       - name: html-volume
         persistentVolumeClaim:
