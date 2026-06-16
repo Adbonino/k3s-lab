@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: adbonino/nginx-site:4beb2cba8c8fec0af2771a7d5f244f29126bdd67
+        image: adbonino/nginx-site:6a507a0720fc3b128a0f48eb801e4c1d852f1b93
         ports:
         - containerPort: 80
         volumeMounts:
