@@ -43,7 +43,7 @@ jobs:
       # 6. Update deployment.yaml (GitOps automático)
       - name: Update Kubernetes manifest
         run: |
-          sed -i "s|image:.*|image: adbonino/nginx-site:${{ github.sha }}|" deployment.yaml
+          sed -i "s|image:.*|image: adbonino/nginx-site:${{ github.sha }}|" nginx/deployment.yaml
 
       # 7. Commit y push del cambio al repo
       - name: Commit updated manifest
